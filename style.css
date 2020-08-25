@@ -1,0 +1,191 @@
+/*h1 (title), h2 products, h2bold be zen, h3 title mini, h4 title footer
+
+header
+    logo
+    nav
+        nav list
+            nav item
+
+home-hero
+    hero-info
+    hero-image
+
+be-zen
+
+products
+    item
+        product-text
+        img
+    item reverse    
+
+discover
+
+summary
+    mini
+
+footer
+    column
+*/
+
+
+
+/*import fonts*/
+
+/*General styling*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --clr-primary: #FFFFFF;
+    --clr-light: #F1F1F1;
+    --clr-dark: #1D223E;
+    --clr-acc-1: #FFA13E;
+    --clr-acc-2: #4E4BB9;
+    --clr-acc-3: #EF6B69;
+    --clr-acc-4: #F2DBAF;
+}
+
+/*Typography*/
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none; 
+}
+
+ul {
+    list-style: none;
+}
+
+/*Buttons*/
+
+button {
+    margin-top: 2rem;
+    text-transform: lowercase;
+    padding: 0.6rem 1rem;
+    border: none;
+    background: var(--clr-dark);
+    color: var(--clr-primary);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.btn-large {
+    text-transform: uppercase;
+}
+
+/*Header*/
+
+header {
+    text-align: right;
+    margin: 0 5rem;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid grey;
+}
+
+header img {
+    width: 120px;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0 1rem;
+}
+.logo {
+    float: left;
+}
+
+/*Hero*/
+
+.home-hero, .be-zen {
+    background-color: var(--clr-light);
+}
+
+.home-hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    padding: 3rem;
+    width: 60%;
+    max-width: 600px;
+}
+
+.hero-image {
+    width: 40%;
+}
+
+/*Products*/
+
+.products {
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.product-text {
+    width: 35%;
+    padding: 0 3rem;
+}
+
+.product-image {
+    width: 35%;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+/*Summary*/
+
+/*Footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+    height: 150px;
+}
+
+.column {
+    max-width: 20%;
+    margin: 1rem 4rem;
+}
+
+footer img {
+    width: 150px;
+}
