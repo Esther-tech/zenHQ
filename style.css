@@ -30,6 +30,9 @@ footer
 
 
 /*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap');
+
 
 /*General styling*/
 
@@ -51,21 +54,37 @@ footer
 
 /*Typography*/
 
+h1, h2, h3, h4 {
+    font-family: "DM Serif Display", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+body {
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
     font-size: 2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+h4 {
+    letter-spacing: 1.5px;
+    font-size: 1.1 rem;
+}
+
 p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-top: 1rem;
+    color: grey;
 }
 
 a {
@@ -76,23 +95,27 @@ ul {
     list-style: none;
 }
 
+
+
 /*Buttons*/
 
 button {
     margin-top: 2rem;
     text-transform: lowercase;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.5rem;
     border: none;
     background: var(--clr-dark);
     color: var(--clr-primary);
     border-radius: 10px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
 
 }
 
 .btn-large {
     text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
 }
 
 /*Header*/
@@ -105,7 +128,8 @@ header {
 }
 
 header img {
-    width: 120px;
+    width: 150px;
+    margin-top: -20px;
 }
 
 .nav-item {
@@ -118,26 +142,56 @@ header img {
 
 /*Hero*/
 
-.home-hero, .be-zen {
-    background-color: var(--clr-light);
-}
+
 
 .home-hero {
-    min-height: 80vh;
+    min-height: 120vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    background: url(./images/back_together.png) no-repeat center;
+    background-size: co;
 }
 
 .hero-text {
     padding: 3rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
     width: 60%;
-    max-width: 600px;
+    max-width: 650px;
+}
+
+.home-hero p,
+.home-hero button {
+    margin-top: 2rem;
 }
 
 .hero-image {
+    margin-top: 3rem;
+    margin-right: 4rem;
+    padding: 6rem 3rem;
     width: 40%;
+    max-width: 500px;
 }
+
+.home-hero img {
+    width: 100%;
+}
+
+/*Be zen*/
+
+.be-zen {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-bottom: 3.5rem;
+}
+
+.zen-container {
+    width: 25%;
+    max-width: 300px;
+}
+
 
 /*Products*/
 
@@ -149,6 +203,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .reverse {
@@ -157,18 +212,73 @@ header img {
 
 .product-text {
     width: 35%;
-    padding: 0 3rem;
+    padding: 0 3.5rem;
+    max-width: 500px;
 }
 
 .product-image {
-    width: 35%;
+    width: 40%;
+    max-width: 600px;
 }
 
 .product-image img {
     width: 100%;
+    padding: 0 3.5rem;
+}
+
+/*Discover*/
+
+.discover {
+    display: grid;
+    place-items: center;
+    padding: 3.5rem 0;
+    margin-top: 6rem;
 }
 
 /*Summary*/
+
+.summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+.mini {
+    text-align: center;
+    display: grid;
+    grid-template: 65px 80px 80px / 1fr;
+    place-items: center;
+    width: 25%;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.mini p {
+    font-size: 0.8rem;
+}
+
+.color {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.orange {
+    background-color: var(--clr-acc-1);
+}
+
+.purple {
+    background-color: var(--clr-acc-2);
+}
+
+.red {
+    background-color: var(--clr-acc-3);
+}
+
+.beige {
+    background-color: var(--clr-acc-4);
+}
 
 /*Footer*/
 
@@ -178,14 +288,23 @@ footer {
     justify-content: center;
     background-color: var(--clr-dark);
     color: var(--clr-primary);
-    height: 150px;
+    height: 200px;
+    margin-top: 5rem;
 }
 
 .column {
-    max-width: 20%;
+    max-width: 30%;
     margin: 1rem 4rem;
 }
 
 footer img {
     width: 150px;
 }
+
+footer p {
+    color: var(--clr-primary);
+    font-weight: 600;
+}
+
+/*Media query* breakpoint 800px/
+
