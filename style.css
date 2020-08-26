@@ -30,9 +30,10 @@ footer
 
 
 /*import fonts*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 
 /*General styling*/
 
@@ -60,6 +61,7 @@ footer
 .fade-in.appear {
     opacity: 1;
 }
+
 
 /*Typography*/
 
@@ -105,8 +107,6 @@ ul {
     list-style: none;
 }
 
-
-
 /*Buttons*/
 
 button {
@@ -124,6 +124,7 @@ button {
 
 button:focus, button:hover {
     opacity: 0.9;
+    outline: none;
 }
 
 .btn-large {
@@ -150,6 +151,7 @@ header img {
     display: inline-block;
     padding: 0 1rem;
 }
+
 .logo {
     float: left;
 }
@@ -160,20 +162,23 @@ header img {
     margin-top: 3rem;
     background: url(./images/back_together.png) no-repeat center;
     background-size: cover;
-    min-height: 140vh;
+    min-height: 1300px;
 }
 
 .home-hero {
-    min-height: 100vh;
+    min-height: 900px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around; 
 }
 
 .hero-text {
     margin-top: 8rem;
-    margin-right: 28rem;
     width: 40%;
     max-width: 550px;
+    min-width: 300px;
     z-index: 10;
 }
 
@@ -183,12 +188,9 @@ header img {
 }
 
 .hero-image {
-    margin-top: 12rem;
-    margin-left: 30rem;
-    width: 500px;
-    position: absolute;
-    z-index: 1;
-    
+    margin-top: 16rem;
+    width: 450px;
+    z-index: 1;   
 }
 
 .home-hero img {
@@ -204,7 +206,7 @@ header img {
     display: grid;
     place-items: center;
     padding-bottom: 3.5rem;
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 
 .zen-container {
@@ -323,8 +325,8 @@ footer {
 }
 
 .column {
-    max-width: 30%;
-    margin: 1rem 4rem;
+    max-width: 25%;
+    margin: 1rem 5%;
 }
 
 footer img {
