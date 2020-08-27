@@ -44,6 +44,7 @@
     100% {
         opacity: 0;
         display: none;
+        z-index: -1;
     }
 }
 
@@ -55,7 +56,7 @@
 /*Typography*/
 
 h1, h2, h3, h4 {
-    font-family: "Source Serif Pro", "DM Serif Display", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Source Serif Pro", Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
     color: var(--clr-dark);
 }
@@ -90,6 +91,7 @@ p {
 
 a {
     text-decoration: none; 
+    color: var(--clr-dark);
 }
 
 ul {
@@ -111,8 +113,10 @@ button {
     cursor: pointer;
 }
 
-button:focus, button:hover {
-    opacity: 0.9;
+button:focus, 
+button:hover,
+a:focus {
+    opacity: 0.7;
     outline: none;
 }
 
@@ -210,7 +214,6 @@ header img {
 .bold {
     font-weight: 900;
 }
-
 
 /*Products*/
 
@@ -326,5 +329,5 @@ footer p {
     font-weight: 600;
 }
 
-/*Media query* breakpoint 800px/
+/*Media query* breakpoint 900px/
 
