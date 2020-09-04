@@ -74,8 +74,7 @@ body {
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2.4rem;
 }
 
 h3 {
@@ -89,7 +88,7 @@ h4 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
     color: grey;
 
@@ -149,17 +148,29 @@ header img {
     float: left;
 }
 
-/*Hero*/ 
+/*Hero* grid: rows - columns */ 
 
 .hero {
-    min-height: 90vh;
+    display: grid;
+    grid-template: 0.7fr 4fr 1fr / 1.5fr 4fr 5fr; 
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    max-height: 80vh;
+}
+
+.video-bg {
+    z-index: -10;
+    width: 100%;
+    grid-row: 1 / 4;
+    grid-column: 1 / 5;
 }
 
 .hero-text {
-    padding-top: 7%;
-    margin-left: 15%;
-    width: 60%;
+    padding: 2rem;
     max-width: 600px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    z-index: 10;
 }
 
 .hero-text p {
@@ -171,10 +182,13 @@ header img {
 /*Be zen*/
 
 .be-zen {
+    position: relative;
     text-align: center;
     width: 100%;
     display: grid;
     place-items: center;
+    background-color: var(--clr-light);
+    padding: 3rem 0;
 }
 
 .zen-container {
@@ -183,24 +197,25 @@ header img {
 }
 
 .zen-container img {
-    width: 30%;
-    margin: 2rem;
+    width: 40%;
 }
 
 /*Stats*/
 
 .stats {
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center; 
+    background-color: var(--clr-primary);
 }
 
 .stat {
     text-align: center;
-    width: 40%;
+    width: 60%;
     max-width: 350px;
     min-height: 250px;
-    padding: 1.5rem;
+    padding: 0.2rem;
 }
 
 .stat img {
@@ -215,11 +230,11 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem;
 }
 
 .item {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,28 +245,59 @@ header img {
 }
 
 .item-text {
-    width: 40%;
-    padding: 0 3rem;
+    width: 50%;
+    padding: 0 4%;
 }
 
 .item-image {
-    width: 55%;
-    padding: 0 3rem;   
+    width: 50%;
+    padding: 0 4%;   
 }
 
 .item-image img {
     width: 100%;
 }
 
+/*Lines*/
+
 .line {
     width: 115%;
+    background-color: var(--clr-primary);
+}
+
+.line-1 {
+    margin-bottom: -6rem;
+}
+
+.line-2 {
+    margin-top: 6rem;
+    margin-bottom: -4rem;
+}
+
+.line-3 {
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+}
+
+.line-4 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.line-5 {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.line-6 {
+    margin-top: 5rem;
 }
 
 /*Features*/
 
 .features {
     text-align: center;
-    padding: 0 10%;
+    padding: 2% 10%;
 }
 
 .features p {
