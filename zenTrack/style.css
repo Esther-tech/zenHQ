@@ -12,22 +12,15 @@
     place-items: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');*/
-
-
 /*General styling*/
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
     overflow-x: hidden;
 }
+
 
 :root {
     --clr-primary: #FFFFFF;
@@ -73,14 +66,11 @@ h1, h2, h3, h4 {
 
 .title {
     color: var(--clr-primary);
+    font-size: 3rem;
 }
 
 body {
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h1 {
-    font-size: 3rem;
 }
 
 h2 {
@@ -102,6 +92,7 @@ p {
     font-size: 1rem;
     margin-top: 1rem;
     color: grey;
+
 }
 
 a {
@@ -135,12 +126,6 @@ a:focus {
     outline: none;
 }
 
-.btn-large {
-    text-transform: uppercase;
-    padding: 1.5rem 3rem;
-    border-radius: 15px;
-}
-
 /*Header*/
 
 header {
@@ -166,8 +151,22 @@ header img {
 
 /*Hero*/ 
 
+.hero {
+    min-height: 90vh;
+}
 
+.hero-text {
+    padding-top: 7%;
+    margin-left: 15%;
+    width: 60%;
+    max-width: 600px;
+}
 
+.hero-text p {
+    color: var(--clr-primary);
+    font-size: 1.5rem;
+    font-family: "Source Serif Pro", Georgia, 'Times New Roman', Times, serif;
+}
 
 /*Be zen*/
 
@@ -176,8 +175,6 @@ header img {
     width: 100%;
     display: grid;
     place-items: center;
-    padding-bottom: 3.5rem;
-    margin-top: 6rem;
 }
 
 .zen-container {
@@ -187,7 +184,7 @@ header img {
 
 .zen-container img {
     width: 30%;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 /*Stats*/
@@ -195,17 +192,15 @@ header img {
 .stats {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    margin-top: 5rem;
+    align-items: center; 
 }
 
 .stat {
     text-align: center;
     width: 40%;
-    max-width: 300px;
+    max-width: 350px;
+    min-height: 250px;
     padding: 1.5rem;
-    height: 300px;
 }
 
 .stat img {
@@ -220,11 +215,64 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 5rem;
 }
 
-.value-props img {
-    width: 110%;
+.item {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.item-text {
+    width: 40%;
+    padding: 0 3rem;
+}
+
+.item-image {
+    width: 55%;
+    padding: 0 3rem;   
+}
+
+.item-image img {
+    width: 100%;
+}
+
+.line {
+    width: 115%;
+}
+
+/*Features*/
+
+.features {
+    text-align: center;
+    padding: 0 10%;
+}
+
+.features p {
+    font-size: 1.1rem;
+}
+
+.feature-grid {
+    display: grid;
+    place-items: center;
+    grid-template: 200px 200px/ repeat(3, 1fr);
+    padding: 4rem;
+}
+
+.feature-grid-item { 
+    width: 70%;
+}
+
+.feature-grid-item img {
+    width: 25%;
+}
+
 
 
 /*Footer*/
