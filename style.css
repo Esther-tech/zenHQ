@@ -231,7 +231,7 @@ header img {
 
 .item {
     text-align: center;
-    flex: 1 1 250px;
+    flex: 1 1 200px;
     display: grid;
     grid-template: 12.5rem 4.5rem 5.5rem 4.5rem/ 4fr;
     place-items: center;
