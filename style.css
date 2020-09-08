@@ -163,7 +163,7 @@ a:focus {
 
 header {
     text-align: right;
-    padding: 2.5% 5%;
+    padding: 1% 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,13 +185,14 @@ header img {
 /*Hero*/
 
 .home-hero {    
-    min-height: 100vh;
+    min-height: 90vh;
     background: url(./images/william-iven-SpVHcbuKi6E-unsplash.jpg) no-repeat center;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 .hero-text {
-    margin-top: 5rem;
     width: 40%;
     min-width: 30rem;
 }
@@ -302,8 +303,8 @@ header img {
 
 footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
     background-color: var(--clr-dark);
     color: var(--clr-primary);
     height: 14rem;
@@ -311,7 +312,7 @@ footer {
 
 .column {
     max-width: 25%;
-    margin: 1rem 5%;
+    margin: 1rem 2%;
 }
 
 footer img {
