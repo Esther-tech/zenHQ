@@ -29,10 +29,15 @@ html {
     --clr-primary: #FFFFFF;
     --clr-light: #F1F1F1;
     --clr-dark: #1D223E;
+    --clr-bg: #EAEAEA;
     --clr-acc-1: #FFA13E;
     --clr-acc-2: #4E4BB9;
     --clr-acc-3: #EF6B69;
     --clr-acc-4: #F2DBAF;
+}
+
+body {
+    background-color: var(--clr-bg);
 }
 
 section {
@@ -42,6 +47,7 @@ section {
 
 .divider {
     width: 100%;
+    background-color: 
 }
 
 .line-1 {
@@ -168,6 +174,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--clr-primary);
 }
 
 header img {
@@ -211,6 +218,7 @@ header img {
     place-items: center;
     background: url(./images/bg-round-small.png) no-repeat center;
     background-size: cover;
+    background-color: var(--clr-primary);
 }
 
 .zen-container {
@@ -261,7 +269,7 @@ header img {
 }
 
 .location-text {
-        width: 22rem;
+    width: 22rem;
     margin-right: 3rem;
 }
 
@@ -288,7 +296,7 @@ header img {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    margin-top: 2.5rem;
+    margin: 2.5rem auto;
 }
 
 .card {
