@@ -58,6 +58,42 @@
 
 /*Typography*/
 
+/* comment; zenHQ info
+
+body {
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: grey;
+}
+
+a {
+    text-decoration: none; 
+    color: var(--clr-dark);
+}
+
+ul {
+    list-style: none;
+}
+
+*/
 h1, h2, h3, h4 {
     font-family: "Source Serif Pro", Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
