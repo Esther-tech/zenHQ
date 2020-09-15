@@ -42,7 +42,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    
 }
 
 html {
@@ -63,6 +63,12 @@ html {
 section {
     padding: 6rem 12%;
 }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
 
 .products, .news {
     background-color: var(--clr-bg);
@@ -114,7 +120,7 @@ ul {
     list-style: none;
 }
 
-/*Buttons*/
+/*Buttons and links*/
 
 .btn {
     margin-top: 2rem;
@@ -127,18 +133,28 @@ ul {
     font-size: 1rem;
     font-weight: 600;
     display: inline-block;
+    transition: all 200ms ease-in;
 }
 
 .btn:focus, 
 .btn:hover {
-    opacity: 0.7;
+    background: var(--clr-acc-3);
+    color: var(--clr-primary);
+    transform: scale(1.1);
     outline: none;
 }
 
 .btn-large {
     font-size: 1.2rem;
     border-radius: 15px;
-    background-color: var(--clr-acc-2)
+    background: var(--clr-acc-2);
+}
+
+.btn-large:focus,
+.btn-large:hover {
+    background: var(--clr-primary);
+    color: var(--clr-acc-2);
+    scale: 10%;
 }
 
 .btn-small {
@@ -146,15 +162,25 @@ ul {
     width: 8.6rem;
 }
 
+.btn-small:focus,
+.btn-small:hover {
+    background: var(--clr-acc-1);
+    color: var(--clr-primary);
+}
+
 /*Header*/
 
 header {
     text-align: right;
     padding: 1% 5%;
+    background-color: var(--clr-primary);
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-primary);
+    width: 100%;
 }
 
 header img {
@@ -190,20 +216,23 @@ header img {
 .be-zen {
     text-align: center;
     width: 100%;
-    display: grid;
-    place-items: center;
     background: url(./images/Back\ ground.png) no-repeat top;
     background-size: cover;
     margin-top: -8rem;
     padding: 3rem 0 0;
 }
 
-.zen-container {
+.be-zen .container {
+    display: grid;
+    place-items: center;
+}
+
+.zen-small {
     width: 40%;
     max-width: 22rem;
 }
 
-.zen-container img {
+.zen-small img {
     width: 80%;
 }
 
@@ -218,11 +247,14 @@ header img {
 
 /*Products section*/
 
-.products {
+.products .container {
     display: flex;
     justify-content: center;
     align-items: center;   
     flex-wrap: wrap;
+}
+.products {
+    
     margin-top: -6rem;
 }
 
@@ -245,31 +277,34 @@ header img {
 /*Location section*/
 
 .location {
+    background: url(./images/back\ map.png) no-repeat center;
+    background-size: cover;
+    background-color: var(--clr-bg);
+    padding: 6rem 4%;
+}
+
+.location .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: url(./images/back\ map.png) no-repeat center;
-    background-size: cover;
-    background-color: var(--clr-bg);
 }
 
 .location-text {
-    width: 22rem;
-    margin-right: 3rem;
+    width: 20rem;
+    margin-right: 2rem;
 }
 
 .location-text img {
-    margin-left: 8rem;
-    width: 60px;
+    margin-left: 7.5rem;
+    width: 50px;
     margin-bottom: 1.5rem;
     align-self: center;
 }
 
 .location-image {
     margin-top: 4rem;
-    width: 60%;
-    min-width: 30rem;
+    width: 65%;
     align-self: center;
 }
 
@@ -306,12 +341,15 @@ header img {
 /*Footer*/
 
 footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-primary);
+    height: 10rem;
+}
+
+footer .container {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    background-color: var(--clr-dark);
-    color: var(--clr-primary);
-    height: 14rem;
 }
 
 .column {
@@ -334,6 +372,23 @@ footer p {
 
 @media only screen and (max-width: 700px) {
   html {
-      font-size: 12px;
+    font-size: 12px;
+  }
+
+  .home-hero {
+    padding-top: 0;
+  }
+
+  .hero-text {
+    min-width: 250px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  header .container {
+      flex-direction: column;
+      padding-bottom: 1rem;
   }
 }
