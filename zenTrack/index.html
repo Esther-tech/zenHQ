@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zenTrack</title>
     
+    <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="icon" href="./images/favicon zenhq.png" type="image/x-icon">
 
@@ -17,14 +18,16 @@
     </div> -->
 
     <header>
-        <a href="../index.html"><img class="logo" src="./images/Logo Zen_principal-01.png" alt="zenhq logo"></a>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">request a demo</a></li>
-                <li class="nav-item"><a href="#">Get in touch</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container container">
+            <a href="../index.html"><img class="logo" src="./images/Logo Zen_principal-01.png" alt="zenhq logo"></a>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="#">request a demo</a></li>
+                    <li class="nav-item"><a href="#">Get in touch</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -34,193 +37,196 @@
             <video autoplay loop muted class="video-bg">
                 <source src="./images/production ID_4169344-compressed.mp4" type="video/mp4">
             </video>
-
-            <div class="hero-text">
-                    <h1 class="title">zenTrack</h1>
-                    <p>La experiencia de entregas mas sofisticada en el mercado para tu empresa, tus operadores y tus clientes.</p>
-                    <button>Request demo</button>
+            <div class="container">
+                <div class="zt-hero-text">
+                        <h1 class="title">zenTrack</h1>
+                        <p class="title-text">La experiencia de entregas mas sofisticada en el mercado para tu empresa, tus operadores y tus clientes.</p>
+                        <a class="btn btn-large" href=""> Request demo</a>
+                </div>
             </div>
-
         </section>
 
-        <section class="be-zen fade-in">
-            <div class="zen-container">
-                <img loading="lazy" src="./images/be_zen.png" alt="zenhq logo large">
-                <h2>Las mejores herramientas para crecer y escala tu operación</h2>
-                <p>With features to cover andd enhance every industry, zenTrack is an ideal solution to streamline and scale your business</p>
+        <section class="scale">
+            <div class="container">
+                <div class="scale-container">
+                    <img loading="lazy" src="./images/be_zen.png" alt="zenhq logo large">
+                    <h2>Las mejores herramientas para crecer y escala tu operación</h2>
+                    <p>With features to cover andd enhance every industry, zenTrack is an ideal solution to streamline and scale your business</p>
+                </div>
             </div>
         </section>
 
         <section class="stats fade-in">
+            <div class="container">
+                <div class="stat">
+                    <img loading="lazy" src="./images/400.png" alt="400%">
+                    <p>Increase in customer reviews online</p>
+                </div>
 
-            <div class="stat">
-                <img loading="lazy" src="./images/400.png" alt="400%">
-                <p>Increase in customer reviews online</p>
+                <div class="stat">
+                    <img loading="lazy" src="./images/93.png" alt="93%">
+                    <p>Decline in time needed for route planning and management</p>
+                </div>
+
+                <div class="stat">
+                    <img loading="lazy" src="./images/77.png" alt="77%">
+                    <p>Reduction in customers missing delivery windows</p>
+                </div>
+
+                <div class="stat">
+                    <img loading="lazy" src="./images/85.png" alt="85%">
+                    <p>Reduction in inbound calls related to delivery</p>
+                </div>
             </div>
-
-            <div class="stat">
-                <img loading="lazy" src="./images/93.png" alt="93%">
-                <p>Decline in time needed for route planning and management</p>
-            </div>
-
-            <div class="stat">
-                <img loading="lazy" src="./images/77.png" alt="77%">
-                <p>Reduction in customers missing delivery windows</p>
-            </div>
-
-            <div class="stat">
-                <img loading="lazy" src="./images/85.png" alt="85%">
-                <p>Reduction in inbound calls related to delivery</p>
-            </div>
-
         </section>
 
         <section class="value-props">
 
-            <img class="line line-1" src="./images/line1-cropped.png" alt="">
+            <img class="divider line-1" src="./images/line1-cropped.png" alt="">
 
-            <div class="item">
-                <div class="item-text">
+            <div class="value-item">
+                <div class="item-text value-1">
                     <h2>Disminuye los tiempos de entrega</h2>
                     <p>Con zenTrack tu equipo podrá planear las entregas con mayor eficiencia usando información en tiempo real, eliminando errores en las direcciones y con un sistema de inteligencia que te indica la forma mas óptima de realizar tus entregas.</p>
-                    <p><a href="#">Explore features</a></p>
+                    <a class="color-link" href="#">Explore features</a>
                 </div>
-                <div class="item-image">
-                    <img loading="lazy" src="./images/value-props/cropped/Resume.jpg" alt="illustration software">
+                <div class="item-image value-img-1">
+                    <img loading="lazy" src="./images/value-props/Resume.png" alt="illustration software">
                 </div>
             </div>
 
-            <img class="line line-2" src="./images/line2.png" alt="">
+            <img class="divider line-2" src="./images/line2.png" alt="">
             
-            <div class="item reverse">
+            <div class="value-item reverse">
                 <div class="item-text">
                     <h2>Sigue tus entregas en tiempo real</h2>
                     <p>En zenTrack todos en tu empresa pueden realizar un seguimiento constante de las entregas, eliminando las llamadas salientes a tus conductores para establecer el estado de un envío</p>
-                    <p><a href="#">Explore features</a></p>
+                    <a class="color-link" href="#">Explore features</a>
                 </div>
                 <div class="item-image">
                     <img loading="lazy" src="./images/value-props/cropped/tiempo real-01.jpg" alt="illustration software">
                 </div>
             </div>
 
-            <img class="line line-3" src="./images/line3-cropped.png" alt="">
+            <img class="divider line-3" src="./images/line3-cropped.png" alt="">
 
-            <div class="item">
+            <div class="value-item">
                 <div class="item-text">
                     <h2>Incrementa la satisfaccion de tus clientes</h2>
                     <p>zenTrack te brinda la posibilidad de mejorar la experiencia de tus clientes manteniendo una comunicación, abierta constante sobre el estado de sus envios.</p>
-                    <p><a href="#">Explore features</a></p>
+                    <a class="color-link" href="#">Explore features</a>
                 </div>
                 <div class="item-image">
                     <img loading="lazy" src="./images/value-props/Satisfaction-01.png" alt="illustration software">
                 </div>
             </div>
 
-            <img class="line line-4" src="./images/line4.png" alt="">
+            <img class="divider line-4" src="./images/line4.png" alt="">
             
-            <div class="item reverse">
+            <div class="value-item reverse">
                 <div class="item-text">
                     <h2>Mejora la reputación de tu marca</h2>
                     <p>Las referencias de otros compradores te permiten construir confianza para traer nuevos compradores. En zenTrack tus clientes pueden compartir su calificación en diferentes plataformas.</p>
-                    <p><a href="#">Explore features</a></p>
+                    <a class="color-link" href="#">Explore features</a>
                 </div>
                 <div class="item-image">
                     <img loading="lazy" src="./images/value-props/cropped/Review.jpg" alt="illustration software">
                 </div>
             </div>
 
-            <img class="line line-5" src="./images/line5-cropped.png" alt="">
+            <img class="divider line-5" src="./images/line5-cropped.png" alt="">
 
-            <div class="item">
+            <div class="value-item">
                 <div class="item-text">
                     <h2>Toma decisiones informadas</h2>
                     <p>Monitorea continuamente tus indicadores principales y crea rute de mejora continua juso a tiempo. Utiliza toda la información disponible para elaborar informes y analisis a la medida de tus necesidades.</p>
-                    <p><a href="#">Explore features</a></p>
+                    <a class="color-link" href="#">Explore features</a>
                 </div>
                 <div class="item-image">
                     <img loading="lazy" src="./images/value-props/cropped/Estadisticas.jpg" alt="illustration software">
                 </div>
             </div>
 
-            <img class="line line-6" src="./images/line6.png" alt="">
+            <img class="divider line-6" src="./images/line6.png" alt="">
            
         </section>
 
 
         <section class="features">
-    
-            <h2>Features</h2>
+            <div class="container">
+                <h2>Features</h2>
 
-            <div class="feature-grid">
+                <div class="feature-grid">
 
-                <div class="feature-grid-item">
-                    <img src="./images/features/feature1-01.png" alt="illustration location">
-                    <p>Encuentra y valida direcciones precisas</p>
-                </div>
-                <div class="feature-grid-item">
-                    <img src="./images/features/feature2-01.png" alt="illustration route">
-                    <p>Planea tus rutas de entrega en segundos</p>
-                </div>
-                <div class="feature-grid-item">
-                    <img src="./images/features/feature3-01.png" alt="illustration traffic">
-                    <p>Construye itinerarios basado en las condiciones de tráfico</p>
-                </div>
-                <div class="feature-grid-item">
-                    <img src="./images/features/feature4-01.png" alt="illustration graph">
-                    <p>Logra la mayor optimización con funciones de inteligencia artificial</p>
-                </div>
-                <div class="feature-grid-item">
-                    <img src="./images/features/feature5-01.png" alt="illustration message">
-                    <p>Reduce entregas fallidas por ausencia del cliente</p>
-                </div>
-                <div class="feature-grid-item">
-                    <img src="./images/features/feature6-01.png" alt="illustration tracking">
-                    <p>Monitorea el progreso de las rutas e itinerarios con actualizaciones de estado al segundo</p>
-                </div>
+                    <div class="feature-grid-item">
+                        <img src="./images/features/feature1-01.png" alt="illustration location">
+                        <p>Encuentra y valida direcciones precisas</p>
+                    </div>
+                    <div class="feature-grid-item">
+                        <img src="./images/features/feature2-01.png" alt="illustration route">
+                        <p>Planea tus rutas de entrega en segundos</p>
+                    </div>
+                    <div class="feature-grid-item">
+                        <img src="./images/features/feature3-01.png" alt="illustration traffic">
+                        <p>Construye itinerarios basado en las condiciones de tráfico</p>
+                    </div>
+                    <div class="feature-grid-item">
+                        <img src="./images/features/feature4-01.png" alt="illustration graph">
+                        <p>Logra la mayor optimización con funciones de inteligencia artificial</p>
+                    </div>
+                    <div class="feature-grid-item">
+                        <img src="./images/features/feature5-01.png" alt="illustration message">
+                        <p>Reduce entregas fallidas por ausencia del cliente</p>
+                    </div>
+                    <div class="feature-grid-item">
+                        <img src="./images/features/feature6-01.png" alt="illustration tracking">
+                        <p>Monitorea el progreso de las rutas e itinerarios con actualizaciones de estado al segundo</p>
+                    </div>
 
+                </div>
             </div>
-
         </section>
 
     </main>
 
     <footer>
-        <div class="column">
-            <img loading="lazy" src="./images/Logo Zen_White-01.png" alt="zenHQ logo">
-            <p>We build advanced pick-up, delivery and shipping tools for Shopify and BigCommerce</p>
-        </div>
-        <div class="column">
-            <p>Shopify</p>
-            <ul>
-                <li>XXX</li>
-                <li>XXX</li>
-                <li>XXX</li>
-                <li>XXX</li>
-            </ul>
-        </div>
-        <div class="column">
-            <p>Company</p>
-            <ul>
-                <li>XXX</li>
-                <li>XXX</li>
-                <li>XXX</li>
-                <li>XXX</li>
-            </ul>
-        </div>
-        <div class="column">
-            <p>Support</p>
-            <ul>
-                <li>Help center</li>
-                <li>App updates</li>
-                <li>XXX</li>
-                <li>XXX</li>
-            </ul>
-        </div>
-        <div class="column">
-             <p>© zenhq 2020</p> 
+        <div class="container">
+            <div class="column">
+                <img loading="lazy" src="./images/Logo Zen_White-01.png" alt="">
+                <p>We build advanced pick-up, delivery and shipping tools for Shopify and BigCommerce</p>
+            </div>
+            <div class="column">
+                <p>Shopify</p>
+                <ul>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                </ul>
+            </div>
+            <div class="column">
+                <p>Company</p>
+                <ul>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                </ul>
+            </div>
+            <div class="column">
+                <p>Support</p>
+                <ul>
+                    <li>Help center</li>
+                    <li>App updates</li>
+                    <li>XXX</li>
+                    <li>XXX</li>
+                </ul>
+            </div>
+            <div class="column">
+                <p>© zenhq 2020</p> 
+            </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>
-
