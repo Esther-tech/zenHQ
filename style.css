@@ -60,7 +60,7 @@ html {
 }
 
 section {
-    padding: 6rem 12%;
+    padding: 6rem 10%;
 }
 
 .container {
@@ -316,17 +316,17 @@ header img {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     margin: 2.5rem auto;
 }
 
 .card {
-    flex: 1 1 230px;
-    padding: 2rem;
-    width: 25%;
+    flex: 0 1 21rem;
+    padding: 1.5rem;
     background-color: var(--clr-primary);
     display: flex;
     flex-direction: column;
-    margin: 3rem 1.5rem 0;
+    margin: 1.5rem 0.5rem;
 }
 
 .card img {

@@ -3,7 +3,7 @@
 
 .zt-hero {
     display: grid;
-    grid-template: 1fr / 12% 1.5fr 2fr 12%; 
+    grid-template: 2fr 1fr / 10% 1.5fr 1fr 10%; 
     place-items: center;
     /* max-height: 90vh; */
     overflow: hidden;
@@ -14,7 +14,7 @@
 .video-bg {
     width: 100%;
     grid-column: 1 / 5;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
     z-index: -1;
 }
 
@@ -39,8 +39,10 @@
 /*Scale*/
 
 .scale {
-    background-color: var(--clr-light);
-    padding: 0 12%;
+    background: url(./images/Back\ ground.png) no-repeat top;
+    background-size: cover;
+    padding: 0 10%;
+    margin-top: -10rem;
 }
 
 .scale .container {
@@ -54,7 +56,7 @@
 .scale-container {
     width: 80%;
     max-width: 500px;
-    margin-top: -5rem;
+    margin-top: 2rem;
 }
 
 .scale-container img {
@@ -66,8 +68,9 @@
 /*Stats*/
 
 .stats {
-    background-color: var(--clr-primary);
-    padding: 0 12%;
+    background: url(./images/curvy\ background_first_idea..png) no-repeat bottom;
+    background-size: cover;
+    padding: 0 10%;
 }
 
 .stats .container {
@@ -78,11 +81,12 @@
 }
 
 .stat {
-    flex: 1 0 100px;
+    flex: 1 1 200px;
     text-align: center;
     width: 20%;
-    max-width: 220px;
-    min-height: 180px;
+    max-width: 240px;
+    margin-bottom: -7rem;
+    margin-top: 10rem;
 }
 
 .stat img {
@@ -155,8 +159,8 @@
 /*Lines*/
 
 .line-1 {
-    
-    margin-bottom: -3rem;
+    margin-top: 5rem;
+
 }
 
 .line-2 {
