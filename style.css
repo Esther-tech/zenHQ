@@ -60,7 +60,7 @@ html {
 }
 
 section {
-    padding: 6rem 10%;
+    padding: 6rem 7%;
 }
 
 .container {
@@ -239,30 +239,30 @@ header img {
 
 .divider {
     width: 100%;
-    margin-top: -1rem;
+    margin-bottom: -2.5rem;
 }
 
 /*Products section*/
 
 .products .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;   
     flex-wrap: wrap;
 }
 .products {
-    
     margin-top: -6rem;
+    padding-bottom: 8rem;
 }
 
 .item {
     text-align: center;
-    flex: 1 1 200px;
+    flex: 1 1 7rem;
     display: grid;
-    grid-template: 12.5rem 4.5rem 5.5rem 4.5rem/ 4fr;
+    grid-template: 12.5rem 4.5rem 7rem 4.5rem/ 4fr;
     place-items: center;
     margin: 0.8rem;
-    padding: 1rem 1.5rem 2rem;
+    padding: 1rem 0.8rem 2rem;
     max-width: 20rem;
     background: white;
 }
@@ -317,11 +317,12 @@ header img {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: 2.5rem auto;
+    padding: 2.5rem 0 4rem;
+    border-bottom: 1px solid darkgrey;
 }
 
 .card {
-    flex: 0 1 21rem;
+    flex: 0 1 22rem;
     padding: 1.5rem;
     background-color: var(--clr-primary);
     display: flex;
